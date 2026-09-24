@@ -3,574 +3,2494 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Awan Trekking – Mount Batur sunrise trekking, Jeep tours, sunset trekking and Bali adventures with local guides in Kintamani.">
-<title>AWAN TREKKING | Mount Batur & Bali Adventure</title>
+
+<title>Awan Trekking | Mount Batur Sunrise Trekking</title>
+
+<meta name="description"
+content="Awan Trekking offers private Mount Batur sunrise trekking, Jeep tours and Bali adventure experiences with a local guide.">
 
 <style>
-:root{
-  --green:#0f5543;
-  --green-dark:#073a2e;
-  --orange:#ee841d;
-  --gold:#c98a28;
-  --cream:#f7f5ef;
-  --text:#5e625f;
-  --white:#fff;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  color:var(--text);
-  background:#fff;
-  line-height:1.65;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#ffffff;
+    color:#234d43;
+    line-height:1.6;
 }
-a{text-decoration:none;color:inherit}
-img{max-width:100%;display:block}
 
-/* HEADER */
-.header{
-  position:sticky;top:0;z-index:1000;
-  background:#fff;
-  box-shadow:0 5px 22px rgba(0,0,0,.07);
+img{
+    width:100%;
+    display:block;
 }
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#ffffff;
+    border-bottom:1px solid #eeeeee;
+}
+
 .navbar{
-  max-width:1200px;margin:auto;
-  min-height:128px;padding:18px 38px;
-  display:flex;align-items:center;justify-content:space-between;
-  gap:20px;
+    max-width:1150px;
+    margin:auto;
+    padding:14px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
-.brand{display:flex;align-items:center;gap:22px;min-width:0}
+
 .logo{
-  width:110px;height:92px;
-  object-fit:contain;
-  flex:0 0 auto;
+    font-size:17px;
+    font-weight:800;
+    letter-spacing:1px;
+    color:#176653;
 }
-.brand-name{
-  color:var(--green);
-  font-size:clamp(25px,4vw,48px);
-  font-weight:800;
-  letter-spacing:1px;
-  line-height:1.05;
+
+.logo span{
+    display:block;
+    font-size:8px;
+    letter-spacing:1.5px;
+    color:#8d8d8d;
+    margin-top:2px;
 }
-.brand-tag{
-  margin-top:8px;
-  color:var(--gold);
-  font-size:clamp(10px,1.5vw,18px);
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:17px;
+    font-weight:800;
+    letter-spacing:1px;
+    color:#176653;
+}
+
+.logo img{
+    width:85px;
+}
+
+.logo-text strong{
+    font-size:22px;
+    font-weight:800;
+    letter-spacing:1px;
+    color:#f28c28;
+    line-height:1.1;
+}
+
+.logo-text span{
+    display:block;
+    font-size:9px;
+    letter-spacing:1.5px;
+    color:#777;
+    margin-top:3px;
+    white-space:nowrap;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.nav-links a{
+    font-size:13px;
+    color:#31574f;
+}
+
+.nav-button{
+    background:#176653;
+    color:white !important;
+    padding:9px 17px;
+    border-radius:20px;
+}
+
+.menu{
+    font-size:24px;
+    color:#176653;
+    display:none;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    max-width:1150px;
+    margin:auto;
+    padding:55px 20px 35px;
+}
+
+.hero h1{
+    font-size:40px;
+    line-height:1.15;
+    color:#176653;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:720px;
+    font-size:15px;
+    color:#606060;
+}
+
+.hero-btn{
+  display:inline-block;
+  background:#176653;
+  color:#fff !important;
+  padding:16px 30px;
+  border-radius:35px;
+  font-size:15px;
   font-weight:700;
-  letter-spacing:3px;
-}
-.desktop-nav{display:flex;gap:22px;align-items:center}
-.desktop-nav a{
-  color:var(--green);font-weight:700;font-size:15px;
-}
-.menu-btn{
-  display:none;border:0;background:none;
-  color:var(--green);font-size:42px;line-height:1;
-  cursor:pointer;
-}
-.mobile-menu{
-  display:none;background:#fff;
-  padding:12px 25px 22px;
-  border-top:1px solid #eee;
-}
-.mobile-menu a{
-  display:block;padding:13px 0;
-  color:var(--green);font-weight:700;
+  letter-spacing:.5px;
+  text-decoration:none;
+  transition:.3s;
 }
 
-/* WELCOME */
-.welcome{padding:62px 35px 82px}
-.container{max-width:1120px;margin:auto}
-.eyebrow{
-  color:var(--orange);
-  font-size:clamp(17px,2.3vw,27px);
-  letter-spacing:8px;
-  font-weight:800;
-  margin-bottom:34px;
+.hero-btn:hover{
+  transform:translateY(-2px);
 }
-.welcome h1{
-  color:var(--green);
-  font-size:clamp(48px,7vw,78px);
-  line-height:1.05;
-  margin-bottom:38px;
 }
-.welcome p{
-  max-width:1040px;
-  font-size:clamp(20px,2.7vw,31px);
-  line-height:1.8;
-  color:#646766;
-}
-.welcome p strong{color:var(--orange)}
 
-/* EXPERIENCES */
-.experiences{
-  padding:70px 35px 95px;
-  background:#fff;
+.btn{
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:25px;
+    background:#176653;
+    color:#fff;
+    font-weight:bold;
+    font-size:13px;
 }
-.section-heading{text-align:center;margin-bottom:55px}
-.section-heading .eyebrow{margin-bottom:24px}
-.section-heading h2{
-  color:var(--green);
-  font-size:clamp(42px,6vw,70px);
-  line-height:1.1;
+
+.btn-outline{
+    background:#fff;
+    color:#176653;
+    border:1px solid #176653;
 }
+
+/* =========================
+   SECTION
+========================= */
+
+section{
+    max-width:1150px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.section-label{
+    color:#b68a4c;
+    font-size:10px;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:5px;
+}
+
+.section-title h2{
+    color:#176653;
+    font-size:27px;
+}
+
+.section-title p{
+    color:#777;
+    font-size:13px;
+    max-width:650px;
+    margin:7px auto 0;
+}
+
+/* =========================
+   TOUR CARDS
+========================= */
+
 .tour-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:28px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
 }
+
 .tour-card{
-  background:#fff;
-  border:1px solid #e5e8e5;
-  border-radius:28px;
-  overflow:hidden;
-  box-shadow:0 12px 35px rgba(0,0,0,.07);
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid #eeeeee;
+    box-shadow:0 4px 18px rgba(0,0,0,.07);
+    transition:.3s;
 }
+
+.tour-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
 .tour-image{
-  height:290px;
-  position:relative;
-  overflow:hidden;
-  background:#edf0ed;
+    height:220px;
+    overflow:hidden;
 }
+
 .tour-image img{
-  width:100%;height:100%;
-  object-fit:cover;
-}
-.tour-body{
-  padding:28px 30px 32px;
-  min-height:235px;
-}
-.tour-body h3{
-  color:var(--green);
-  font-size:27px;
-  line-height:1.2;
-  margin-bottom:12px;
-}
-.tour-body p{font-size:17px;color:#686c69;margin-bottom:18px}
-.tour-link{
-  display:inline-block;
-  background:var(--orange);
-  color:#fff;
-  padding:11px 21px;
-  border-radius:28px;
-  font-weight:800;
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-/* GALLERY */
+.tour-content{
+    padding:18px;
+}
+
+.tour-content h3{
+    font-size:17px;
+    color:#176653;
+    margin-bottom:7px;
+}
+
+.tour-content p{
+    font-size:12px;
+    color:#666;
+    min-height:42px;
+}
+
+.info{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    margin:13px 0;
+}
+
+.info span{
+    background:#f3f7f5;
+    padding:5px 8px;
+    border-radius:6px;
+    font-size:10px;
+    color:#41645b;
+}
+
+.price{
+    font-size:13px;
+    font-weight:bold;
+    color:#b17b39;
+    margin-bottom:13px;
+}
+
+.details{
+    font-size:12px;
+    color:#176653;
+    font-weight:bold;
+}
+
+/* =========================
+   EXPERIENCES
+========================= */
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:28px;
+}
+
+.experience-card{
+    border:1px solid #e5e5e5;
+    border-radius:24px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+
+.experience-card img{
+    display:block;
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.experience-content{
+    padding:24px 24px 26px;
+}
+
+.experience-label{
+    display:block;
+    width:100%;
+    text-align:center;
+}
+
+.experience-section > .experience-header{
+    text-align:center;
+    width:100%;
+    margin-top:0;
+}
+
+.experience-section .experience-label{
+    display:block;
+    width:100%;
+    text-align:center;
+    margin-top:0;
+    margin-bottom:2px;
+}
+
+.experience-section .experience-header h2{
+    text-align:center;
+    margin:0 0 12px;
+}
+
+.experience-section .experience-header p{
+    text-align:center;
+    margin:0 auto 22px;
+    max-width:750px;
+}
+
+.mountain-divider{
+    width:100%;
+    max-width:850px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.mountain-divider img{
+    width:120px !important;
+    max-width:120px !important;
+    height:auto !important;
+    display:block;
+    margin:0 auto;
+    object-fit:contain;
+}
+
+.experience-section > .experience-header{
+    margin-top:-55px;
+}
+
+.mountain-divider{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.mountain-divider::before,
+.mountain-divider::after{
+    content:"";
+    position:absolute;
+    height:3px;
+    background:#2f6658;
+    top:78%;
+    z-index:1;
+}
+
+.mountain-divider::before{
+    left:0;
+    right:calc(50% + 60px);
+}
+
+.mountain-divider::after{
+    left:calc(50% + 60px);
+    right:0;
+}
+
+.mountain-divider img{
+    position:relative;
+    z-index:2;
+}
+.experience-content h3{
+    font-size:24px;
+    line-height:1.25;
+    color:#176653;
+    margin:0 0 10px;
+    font-weight:700;
+}
+
+.experience-content p{
+    color:#777;
+    font-size:16px;
+    margin:0 0 22px;
+    line-height:1.5;
+}
+
+.experience-content a{
+    display:inline-block;
+    color:#f58220;
+    font-size:18px;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.experience-content a:hover{
+    color:#176653;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
 .gallery{
-  padding:75px 25px 95px;
-  background:#fff;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
 }
-.gallery-box{
-  max-width:1100px;
-  height:min(64vw,620px);
-  min-height:330px;
-  margin:auto;
-  position:relative;
-  overflow:hidden;
-  border-radius:28px;
-  background:#e9ece8;
-  box-shadow:0 15px 40px rgba(0,0,0,.12);
-}
-.gallery-slide{
-  position:absolute;inset:0;
-  opacity:0;
-  transition:opacity .7s ease;
-}
-.gallery-slide.active{opacity:1}
-.gallery-slide img{
-  width:100%;height:100%;
-  object-fit:cover;
-}
-.gallery-caption{
-  position:absolute;left:0;right:0;bottom:0;
-  padding:45px 28px 25px;
-  color:#fff;
-  background:linear-gradient(transparent,rgba(0,0,0,.72));
-  font-size:20px;font-weight:700;
-}
-.gallery-arrow{
-  position:absolute;top:50%;transform:translateY(-50%);
-  width:52px;height:52px;border:0;border-radius:50%;
-  background:rgba(255,255,255,.88);
-  color:var(--green);font-size:28px;
-  cursor:pointer;z-index:5;
-}
-.gallery-arrow.prev{left:18px}
-.gallery-arrow.next{right:18px}
-.dots{
-  position:absolute;left:0;right:0;bottom:16px;
-  display:flex;justify-content:center;gap:8px;z-index:6;
-}
-.dot{
-  width:9px;height:9px;border:0;border-radius:50%;
-  background:#fff8;cursor:pointer;
-}
-.dot.active{background:#fff}
 
-/* CTA */
+.gallery-item{
+    height:230px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.gallery-item img{
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.05);
+}
+
+/* =========================
+   WHY AWAN
+========================= */
+
+.why{
+    background:#f7faf8;
+    max-width:none;
+}
+
+.why-inner{
+    max-width:900px;
+    margin:auto;
+    padding:10px 20px;
+}
+
+.why h2{
+    color:#176653;
+    font-size:27px;
+    margin-bottom:15px;
+}
+
+.why-list{
+    list-style:none;
+}
+
+.why-list li{
+    padding:8px 0;
+    font-size:13px;
+    color:#555;
+}
+
+.why-list li::before{
+    content:"✓";
+    color:#176653;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+/* =========================
+   CTA
+========================= */
+
 .cta{
-  background:var(--green);
-  color:#fff;text-align:center;
-  padding:90px 25px 100px;
-}
-.cta h2{
-  font-size:clamp(40px,6vw,68px);
-  line-height:1.2;
-  max-width:900px;margin:0 auto 35px;
-}
-.cta p{
-  font-size:clamp(20px,2.5vw,29px);
-  max-width:800px;margin:0 auto 45px;
-}
-.cta-btn{
-  display:inline-block;
-  background:var(--orange);color:#fff;
-  padding:18px 45px;border-radius:50px;
-  font-size:20px;font-weight:800;
+    max-width:none;
+    text-align:center;
+    background:#eef6f2;
+    padding:60px 20px;
 }
 
-/* FOOTER */
-.footer{
-  background:var(--green-dark);
-  color:#dce5e1;
-  padding:70px 35px 35px;
+.cta h2{
+    color:#176653;
+    font-size:28px;
+    margin-bottom:10px;
 }
+
+.cta p{
+    color:#777;
+    font-size:13px;
+    max-width:600px;
+    margin:0 auto 22px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#173f37;
+    color:white;
+    padding:45px 20px 20px;
+}
+
 .footer-grid{
-  max-width:1120px;margin:auto;
-  display:grid;
-  grid-template-columns:1.25fr 1fr 1.25fr;
-  gap:55px;
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
 }
-.footer h3{
-  color:#fff;font-size:28px;margin-bottom:20px;
+
+footer h3{
+    font-size:18px;
+    margin-bottom:10px;
 }
-.footer h4{
-  color:var(--orange);font-size:27px;margin-bottom:20px;
+
+footer h4{
+    font-size:13px;
+    margin-bottom:10px;
 }
-.footer p{font-size:18px;line-height:1.9}
-.quick-links a{
-  display:block;padding:7px 0;
-  font-size:18px;
+
+footer p,
+footer a{
+    color:#cbd8d4;
+    font-size:11px;
+    line-height:1.8;
 }
-.quick-links a::before{
-  content:"→";color:var(--orange);
-  font-weight:800;margin-right:14px;
-}
-.contact-item{
-  display:flex;gap:13px;align-items:flex-start;
-  margin:15px 0;font-size:17px;
-}
-.contact-icon{
-  width:40px;height:40px;border-radius:50%;
-  display:grid;place-items:center;
-  flex:0 0 40px;
-  background:var(--orange);color:#fff;
-  font-size:19px;font-weight:800;
-}
-.socials{
-  display:flex;gap:12px;margin-top:25px;
-}
-.social{
-  width:48px;height:48px;border-radius:50%;
-  display:grid;place-items:center;
-  background:#fff;color:var(--green-dark);
-  font-size:21px;font-weight:800;
-  transition:.2s;
-}
-.social:hover{transform:translateY(-3px);background:var(--orange);color:#fff}
+
 .footer-bottom{
-  max-width:1120px;margin:45px auto 0;
-  padding-top:25px;border-top:1px solid rgba(255,255,255,.18);
-  text-align:center;font-size:14px;color:#aebdb7;
+    max-width:1100px;
+    margin:35px auto 0;
+    padding-top:15px;
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+    font-size:10px;
+    color:#b9c9c4;
 }
-.whatsapp-float{
-  position:fixed;right:20px;bottom:20px;z-index:999;
-  width:62px;height:62px;border-radius:50%;
-  background:#25d366;color:#fff;
-  display:grid;place-items:center;
-  font-size:28px;font-weight:800;
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+    width:100%;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.logo img{
+    width:90px;
+    height:auto;
+    display:block;
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.logo-text strong{
+    font-size:19px !important;
+    line-height:1.1;
+    white-space:nowrap;
+}
+.logo-text span{
+    font-size:9px !important;
+    letter-spacing:1.5px;
+    white-space:nowrap;
+}
+
+.menu{
+    display:block !important;
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:28px;
+    color:#176653;
+    cursor:pointer;
+    z-index:1001;
+}
+}
+/* =========================
+   HERO AUTOMATIC SLIDER
+========================= */
+
+.hero-slider{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:0;
+}
+
+.hero-slide{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity 1.2s ease-in-out;
+}
+
+.hero-slide.active{
+    opacity:1;
+}
+
+.hero-slider::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.28);
+    z-index:1;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+@media (max-width:768px){
+
+  .hero{
+    min-height:620px;
+    height:620px;
+    padding:40px 20px 35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .hero h1{
+    font-size:32px;
+    line-height:1.15;
+    margin:12px 0 18px;
+    color:#ffffff;
+    font-weight:800;
+  }
+
+  .hero p{
+    font-size:16px;
+    line-height:1.7;
+    color:#ffffff;
+    max-width:650px;
+    margin:0 auto 28px;
+  }
+
+  .hero .btn,
+  .hero a{
+    font-size:15px;
+    padding:16px 28px;
+    border-radius:35px;
+  }
+
+}
+
+    .hero p{
+        font-size:13px;
+    }
+
+}
+    }
+    
+    .hero{
+        padding:40px 18px 25px;
+    }
+
+    .hero h1{
+        font-size:29px;
+    }
+
+    .hero p{
+        font-size:13px;
+    }
+
+    section{
+        padding:40px 15px;
+    }
+
+    .section-title h2{
+        font-size:23px;
+    }
+
+    .tour-grid,
+    .experience-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .tour-image{
+        height:190px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-item{
+        height:220px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+}
+/* =========================================
+   AWAN TREKKING - NEW HERO DESIGN
+   ========================================= */
+
+.hero{
+  position:relative;
+  min-height:720px;
+  height:calc(100vh - 100px);
+  max-height:900px;
+  overflow:hidden;
+  padding:0 !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+}
+
+/* HERO SLIDER */
+.hero-slider{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  z-index:0;
+}
+
+.hero-slide{
+  position:absolute;
+  inset:0;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover;
+  opacity:0;
+  transition:opacity 1.2s ease;
+}
+
+.hero-slide:first-child{
+  opacity:1;
+}
+
+/* DARK OVERLAY */
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(0,0,0,.20),
+    rgba(0,0,0,.25) 45%,
+    rgba(0,0,0,.55)
+  );
+  z-index:1;
+}
+
+/* MAIN HERO CONTENT */
+.hero-content{
+  position:relative;
+  z-index:3;
+  width:100%;
+  max-width:1100px;
+  padding:50px 25px 150px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* TOP SERVICES */
+.hero-services{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0;
+    margin-bottom:24px;
+}
+
+.hero-service{
+    width:33.33%;
+    min-width:0;
+    padding:0 12px;
+    text-align:center;
+    position:relative;
+}
+
+.hero-service img{
+    width:38px !important;
+    height:38px !important;
+    object-fit:contain;
+    filter:brightness(0) invert(1);
+    margin-bottom:8px;
+}
+
+.hero-service span{
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1px;
+    color:#fff;
+    white-space:nowrap;
+}
+
+/* SUBTITLE */
+.hero-subtitle{
+  color:#fff;
+  font-size:15px;
+  letter-spacing:6px;
+  font-weight:400;
+  margin:0 0 10px;
+}
+
+/* TITLE */
+.hero h1{
+  margin:0 !important;
+  color:#fff;
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:64px !important;
+  line-height:.95;
+  font-weight:700;
+  text-align:center;
+  text-shadow:0 3px 12px rgba(0,0,0,.35);
+}
+
+.hero h1 span{
+  display:block;
+  color:#f2ad45;
+  font-family:"Brush Script MT","Segoe Script",cursive;
+  font-size:1.05em;
+  font-weight:500;
+  margin-top:8px;
+  transform:rotate(-2deg);
+}
+
+/* DESCRIPTION */
+.hero p{
+  max-width:850px;
+  margin:18px auto 25px !important;
+  color:#fff;
+  font-size:20px !important;
+  line-height:1.45;
+  text-align:center;
+  text-shadow:0 2px 7px rgba(0,0,0,.45);
+}
+
+/* BUTTON */
+.hero-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:330px;
+  padding:18px 35px;
+  border-radius:50px;
+  background:#087b68;
+  color:#fff !important;
+  font-size:18px;
+  font-weight:700;
+  letter-spacing:.5px;
+  text-decoration:none !important;
   box-shadow:0 8px 25px rgba(0,0,0,.25);
+  transition:.3s ease;
+}
+
+.hero-btn:hover{
+  background:#096957;
+  transform:translateY(-2px);
+}
+
+/* BOTTOM FEATURES */
+.hero-features{
+    position:absolute;
+    bottom:18px;
+    left:0;
+    right:0;
+    width:100%;
+    padding:0 8px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
+    align-items:center;
+    box-sizing:border-box;
+}
+
+.hero-feature{
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:0 4px;
+    position:relative;
+    gap:5px;
+    box-sizing:border-box;
+}
+
+/* garis pemisah */
+.hero-feature:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:1px;
+    height:42px;
+    background:rgba(255,255,255,.55);
+}
+
+/* ICON PUTIH */
+.hero-feature img{
+    width:28px !important;
+    height:28px !important;
+    object-fit:contain;
+    filter:brightness(0) invert(1);
+}
+
+/* JUDUL */
+.hero-feature strong{
+    display:block;
+    color:#fff;
+    font-size:10px;
+    font-weight:700;
+    line-height:1.2;
+    white-space:nowrap;
+    margin-bottom:2px;
+}
+
+/* SUBTEXT */
+.hero-feature small{
+    display:block;
+    color:#fff;
+    font-size:8px;
+    line-height:1.2;
+    white-space:nowrap;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width:900px){
+
+  .hero{
+    min-height:680px;
+  }
+
+  .hero-content{
+    padding:45px 20px 150px;
+  }
+
+  .hero h1{
+    font-size:52px !important;
+  }
+
+  .hero p{
+    font-size:18px !important;
+  }
+
+  .hero-feature{
+    gap:9px;
+  }
+
+  .hero-feature img{
+    width:40px !important;
+    height:40px !important;
+  }
+
+  .hero-feature strong{
+    font-size:14px;
+  }
+
+  .hero-feature small{
+    font-size:11px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width:600px){
+
+  .hero{
+    min-height:700px;
+    height:calc(100vh - 80px);
+    max-height:none;
+  }
+
+  .hero-content{
+    padding:35px 15px 165px;
+  }
+
+.hero-services{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0;
+    margin-bottom:24px;
+}
+
+.hero-service{
+    width:150px;
+    text-align:center;
+    position:relative;
+    padding:0 20px;
+}
+
+.hero-service:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:1px;
+    height:55px;
+    background:rgba(255,255,255,.65);
+}
+}
+
+.hero-service img{
+    width:42px !important;
+    height:42px !important;
+    object-fit:contain;
+    filter:brightness(0) invert(1);
+    margin-bottom:8px;
+}
+
+.hero-service span{
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    color:#fff;
+    white-space:nowrap;
+}
+  }
+
+  .hero-subtitle{
+    font-size:11px;
+    letter-spacing:4px;
+    margin-bottom:10px;
+  }
+
+  .hero h1{
+    font-size:40px !important;
+    line-height:1;
+  }
+
+  .hero h1 span{
+    font-size:1.05em;
+    margin-top:5px;
+  }
+
+  .hero p{
+    max-width:360px;
+    font-size:15px !important;
+    line-height:1.4;
+    margin:15px auto 20px !important;
+  }
+
+  .hero-btn{
+    min-width:250px;
+    padding:15px 25px;
+    font-size:15px;
+  }
+
+.hero-features{
+    bottom:18px;
+    padding:0 10px;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px 12px;
+}
+
+.hero-feature{
+    gap:8px;
+    min-width:0;
+}
+
+.hero-feature img{
+    width:34px !important;
+    height:34px !important;
+    object-fit:contain;
+}
+
+.hero-feature strong{
+    font-size:12px;
+    line-height:1.2;
+}
+
+.hero-feature small{
+    font-size:9px;
+    line-height:1.2;
+}
+}
+/* HERO FEATURES - 4 ITEMS IN ONE ROW */
+.hero-features{
+    position:absolute;
+    bottom:18px;
+    left:0;
+    right:0;
+    width:100%;
+    padding:0 8px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
+    align-items:center;
+    box-sizing:border-box;
+    z-index:5;
+}
+
+.hero-feature{
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:0 4px;
+    gap:5px;
+}
+
+.hero-feature img{
+    width:30px !important;
+    height:30px !important;
+    object-fit:contain;
+    filter:brightness(0) invert(1);
+}
+
+.hero-feature strong{
+    display:block;
+    color:#fff !important;
+    font-size:13px !important;
+    font-weight:700;
+    line-height:1.2;
+    margin-bottom:2px;
+    white-space:nowrap;
+}
+
+.hero-feature small{
+    display:block;
+    color:#fff !important;
+    font-size:9px !important;
+    line-height:1.2;
+    white-space:nowrap;
 }
 
 /* MOBILE */
-@media(max-width:800px){
-  .navbar{min-height:105px;padding:13px 22px}
-  .logo{width:85px;height:75px}
-  .brand{gap:12px}
-  .brand-tag{letter-spacing:2px;line-height:1.45}
-  .desktop-nav{display:none}
-  .menu-btn{display:block}
-  .mobile-menu.open{display:block}
-  .welcome{padding:48px 32px 65px}
-  .eyebrow{letter-spacing:6px}
-  .welcome h1{margin-bottom:30px}
-  .welcome p{font-size:20px;line-height:1.8}
-  .experiences{padding:55px 20px 70px}
-  .tour-grid{grid-template-columns:1fr;gap:22px}
-  .tour-image{height:240px}
-  .tour-body{min-height:0;padding:25px}
-  .gallery{padding:55px 18px 70px}
-  .gallery-box{height:70vw;min-height:280px;border-radius:20px}
-  .footer{padding:55px 30px 30px}
-  .footer-grid{grid-template-columns:1fr;gap:38px}
+@media (max-width:700px){
+    .hero-features{
+        bottom:18px;
+        padding:0 6px;
+    }
+
+    .hero-feature img{
+        width:28px !important;
+        height:28px !important;
+    }
+
+    .hero-feature strong{
+        font-size:10px !important;
+    }
+
+    .hero-feature small{
+        font-size:8px !important;
+    }
+}
+/* FINAL - 4 FEATURES IN ONE ROW */
+.hero-features{
+    position:absolute !important;
+    bottom:18px !important;
+    left:0 !important;
+    right:0 !important;
+    width:100% !important;
+
+    display:grid !important;
+    grid-template-columns:repeat(4,1fr) !important;
+    gap:0 !important;
+
+    padding:0 6px !important;
+    box-sizing:border-box !important;
+    z-index:10 !important;
+}
+
+.hero-feature{
+    width:auto !important;
+    min-width:0 !important;
+
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    text-align:center !important;
+    padding:0 4px !important;
+    box-sizing:border-box !important;
+}
+
+.hero-feature img{
+    width:28px !important;
+    height:28px !important;
+    object-fit:contain !important;
+    filter:brightness(0) invert(1) !important;
+}
+
+.hero-feature strong{
+    display:block !important;
+    color:#fff !important;
+    font-size:12px !important;
+    white-space:nowrap !important;
+}
+
+.hero-feature small{
+    display:block !important;
+    color:#fff !important;
+    font-size:8px !important;
+    white-space:nowrap !important;
+}
+#tours .book-now-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-width: 280px;
+    padding: 16px 30px;
+    background: #f58220;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 800;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+#tours .book-now-btn img {
+    width: 27px;
+    height: 27px;
+    object-fit: contain;
+}
+
+#tours .book-now-btn strong {
+    font-size: 26px;
+    line-height: 1;
+}
+
+#tours .section-label {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+#tours .section-label::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 55px;
+    height: 3px;
+    background: #f58220;
+    border-radius: 3px;
+    transform: translateX(-50%);
+}
+/* EXPERIENCE CARDS */
+
+.experience-card {
+    display: block;
+    padding: 28px 24px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #245f54;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+}
+
+.experience-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.experience-card h3 {
+    margin: 0 0 8px;
+    font-size: 21px;
+    color: #176b5d;
+}
+
+.experience-card p {
+    margin: 0 0 18px;
+    color: #777;
+    font-size: 15px;
+}
+
+.experience-card span {
+    font-weight: 700;
+    color: #f58220;
+    font-size: 15px;
+}
+/* MOUNTAIN SECTION DIVIDER */
+.mountain-divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    width:90%;
+    margin:60px auto;
+}
+
+.mountain-divider::before,
+.mountain-divider::after{
+    content:"";
+    flex:1;
+    height:2px;
+    background:#176653;
+}
+
+.mountain-divider{
+    width:100%;
+    max-width:850px;
+    margin:45px auto 10px;
+    text-align:center;
+}
+.mountain-divider img{
+    width:100%;
+    max-width:850px;
+    height:auto;
+    display:block;
+    margin:0 auto;
+    object-fit:contain;
+}
+
+/* TOUR FILTER */
+.tour-filters{
+  margin-top:25px;
+  text-align:center;
+}
+
+.filter-row{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.tour-filter{
+  background:#ffffff;
+  color:#f28c28;
+  border:2px solid #f28c28;
+  border-radius:25px;
+  padding:10px 20px;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  transition:all .3s ease;
+}
+
+.tour-filter:hover,
+.tour-filter.active{
+  background:#f28c28;
+  color:#ffffff;
+  border-color:#f28c28;
+}
+
+.special-row{
+  margin-top:12px;
+}
+
+.tour-filter.special{
+  background:#d4a017;
+  color:#111111;
+  border-color:#d4a017;
+}
+
+.tour-filter.special:hover{
+  background:#f28c28;
+  color:#ffffff;
+  border-color:#f28c28;
 }
 </style>
 </head>
 
+
 <body>
 
-<header class="header">
-  <div class="navbar">
-    <a class="brand" href="#home">
-      <!-- Gunakan logo Awan Trekking yang sudah di-upload ke repository -->
-      <img class="logo" src="C693032E-A329-413B-8338-4086C51D83A3(1).jpeg" alt="Awan Trekking Logo">
-      <span>
-        <span class="brand-name">AWAN TREKKING</span>
-        <span class="brand-tag">ADVENTURE • WALKING • NATURE TREKKING</span>
-      </span>
-    </a>
+<!-- =========================
+     HEADER
+========================= -->
 
-    <nav class="desktop-nav">
-      <a href="#home">Home</a>
-      <a href="#tours">Tours</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<header>
 
-    <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
-  </div>
+<div class="navbar">
 
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#home" onclick="closeMenu()">Home</a>
-    <a href="#tours" onclick="closeMenu()">Tours</a>
-    <a href="#gallery" onclick="closeMenu()">Gallery</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
-  </div>
+<div class="logo">
+    <img src="C693032E-A329-413B-8338-4086C51D83A3.png" alt="Awan Trekking Logo">
+
+    <div class="logo-text">
+        <strong>AWAN TREKKING</strong>
+        <span>(ADVENTURE • WALKING • NATURE TREKKING)</span>
+    </div>
+</div>
+</div>
+
+<nav class="nav-links">
+<a href="#tours">Tours</a>
+<a href="#experiences">Experiences</a>
+<a href="#gallery">Gallery</a>
+<a href="#about">About</a>
+<a href="#contact" class="nav-button">BOOK NOW</a>
+</nav>
+
+<div class="menu">☰</div>
+
+</div>
+
 </header>
 
-<main id="home">
 
-  <section class="welcome">
-    <div class="container">
-      <div class="eyebrow">WELCOME TO</div>
-      <h1>AWAN TREKKING</h1>
-      <p>
-        <strong>Awan Trekking</strong> is a local adventure service based in Kintamani, Bali.
-        Discover Mount Batur with a local guide who knows the trails, sunrise viewpoints
-        and the best places to enjoy Bali. We offer private sunrise trekking, Jeep tours,
-        sunset trekking and customized Bali adventures.
-      </p>
-    </div>
-  </section>
+<!-- =========================
+     WELCOME
+========================= -->
 
-  <section class="experiences" id="tours">
-    <div class="container">
-      <div class="section-heading">
-        <div class="eyebrow">OUR EXPERIENCES</div>
-        <h2>Mount Batur Tours</h2>
+<main>
+
+<section class="hero">
+
+  <!-- HERO SLIDESHOW -->
+  <div class="hero-slider">
+    <img src="hero-1.jpeg.jpeg" class="hero-slide">
+    <img src="hero-2.jpeg.jpeg" class="hero-slide">
+    <img src="hero-3.jpeg.jpeg" class="hero-slide">
+    <img src="hero-4.jpeg.jpeg" class="hero-slide">
+    <img src="hero-5.jpeg.jpeg" class="hero-slide">
+  </div>
+
+  <!-- DARK OVERLAY -->
+  <div class="hero-overlay"></div>
+
+  <!-- HERO CONTENT -->
+  <div class="hero-content">
+
+    <!-- TOP ICONS -->
+    <div class="hero-services">
+
+      <div class="hero-service">
+        <img src="person-hiking-solid-full.svg">
+        <span>TREKKING</span>
       </div>
 
-      <div class="tour-grid">
+      <div class="hero-service">
+        <img src="car-solid-full.svg">
+        <span>JEEP TOUR</span>
+      </div>
 
-        <article class="tour-card">
-          <div class="tour-image">
-            <img src="IMG_0162.jpeg" alt="Mount Batur sunrise trekking"
-                 onerror="this.parentElement.style.background='linear-gradient(135deg,#0f5543,#eaa126)'">
-          </div>
-          <div class="tour-body">
+      <div class="hero-service">
+        <img src="mountain-solid-full.svg">
+        <span>ADVENTURE</span>
+      </div>
+
+    </div>
+
+    <div class="hero-subtitle">
+      PRIVATE EXPERIENCES
+    </div>
+
+    <h1>
+      Mount Batur Sunrise
+      <span>Adventure</span>
+    </h1>
+
+    <p>
+      Trekking, Jeep Tour and unforgettable adventures in Kintamani, Bali
+      with a local guide.
+    </p>
+
+    <a href="#tours" class="hero-btn">
+      → &nbsp; EXPLORE TOURS
+    </a>
+
+  </div>
+
+  <!-- HERO FEATURES -->
+  <div class="hero-features">
+
+    <div class="hero-feature">
+      <img src="user-group-solid-full.svg">
+      <div>
+        <strong>Private Tours</strong>
+        <small>Just You &amp; Your Guide</small>
+      </div>
+    </div>
+
+    <div class="hero-feature">
+      <img src="envira-brands-solid-full.svg">
+      <div>
+        <strong>Local Guide</strong>
+        <small>Authentic Experience</small>
+      </div>
+    </div>
+
+    <div class="hero-feature">
+      <img src="shield-heart-solid-full.svg">
+      <div>
+        <strong>Safe &amp; Reliable</strong>
+        <small>Your Safety Our Priority</small>
+      </div>
+    </div>
+
+    <div class="hero-feature">
+      <img src="mountain-sun-solid-full.svg">
+      <div>
+        <strong>Stunning Views</strong>
+        <small>Unforgettable Moments</small>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     MOUNT BATUR TOURS
+========================= -->
+
+<section id="tours">
+
+  <div class="section-title">
+
+    <div class="section-label">
+      MOUNT BATUR TOURS
+    </div>
+
+    <h2>
+      Explore the Magic of Mount Batur!
+    </h2>
+
+    <h3>
+      Sunrise Trekking, Jeep Adventures & Authentic Bali Experiences
+    </h3>
+
+    <p>
+      Wake up early and experience the unforgettable beauty of Mount Batur
+      with a local guide. Choose your perfect adventure — hike to the summit
+      for a spectacular sunrise or explore the volcanic landscape by 4WD Jeep.
+    </p>
+
+   <a href="#booking" class="book-now-btn">
+    <img src="monthlycalendar_112505.svg" alt="Calendar">
+    <strong>BOOK NOW</strong>
+    <span>→</span>
+</a>
+  </div>
+
+</section>
+
+<div class="mountain-divider">
+    <img src="awan_trekking_mountain_divider.png" alt="Mount Batur Mountain Divider">
+</div>
+
+<!-- =========================
+     EXPERIENCE MOUNT BATUR
+========================= -->
+
+<section class="experience-section" id="experiences">
+
+    <div class="experience-header">
+
+        <span class="experience-label">
+            EXPERIENCE MOUNT BATUR
+        </span>
+
+        <h2>
+            Discover Mount Batur Your Way
+        </h2>
+
+        <p>
+            Choose your perfect Mount Batur experience,
+            from sunrise trekking to scenic Jeep adventures.
+        </p>
+        
+    </div>
+</div>
+
+<!-- TOUR FILTER -->
+<div class="tour-filters">
+
+  <div class="filter-row">
+
+    <!-- ALL TOURS -->
+    <button class="tour-filter active" data-filter="all">
+      <img src="IMG_5349.jpeg" alt="All Tours">
+      <span>All Tours</span>
+    </button>
+
+    <!-- TREKKING -->
+    <button class="tour-filter" data-filter="trekking">
+      <img src="IMG_5348.jpeg" alt="Trekking">
+      <span>Trekking</span>
+    </button>
+
+    <!-- JEEP -->
+    <button class="tour-filter" data-filter="jeep">
+      <img src="IMG_5346.jpeg" alt="Jeep">
+      <span>Jeep</span>
+    </button>
+
+    <!-- ATV -->
+    <button class="tour-filter" data-filter="atv">
+      <img src="IMG_5344.jpeg" alt="ATV">
+      <span>ATV</span>
+    </button>
+
+    <!-- RAFTING -->
+    <button class="tour-filter" data-filter="rafting">
+      <img src="IMG_5345.jpeg" alt="Rafting">
+      <span>Rafting</span>
+    </button>
+
+    <!-- WATERFALL -->
+    <button class="tour-filter" data-filter="waterfall">
+      <img src="IMG_5342.jpeg" alt="Waterfall">
+      <span>Waterfall</span>
+    </button>
+
+    <!-- SPECIAL COMBO -->
+    <button class="tour-filter special" data-filter="special">
+      <img src="IMG_5343.jpeg" alt="Special Combo">
+      <span>Special Combo</span>
+    </button>
+
+  </div>
+
+  <div class="tour-count">
+    <span id="tourCount">6</span> tours available
+  </div>
+
+</div>
+
+  <button class="tour-filter" data-filter="trekking">
+    <img src="IMG_5348.jpeg" alt="Trekking">
+    <span>Trekking</span>
+  </button>
+
+  <button class="tour-filter" data-filter="jeep">
+    <img src="IMG_5346.jpeg" alt="Jeep">
+    <span>Jeep</span>
+  </button>
+<button class="tour-filter active" data-filter="all">
+    <img src="IMG_5349.jpeg" alt="All Tours">
+    <span>All Tours</span>
+</button>
+  <button class="tour-filter" data-filter="atv">
+    <img src="IMG_5344.jpeg" alt="ATV">
+    <span>ATV</span>
+  </button>
+
+  <button class="tour-filter" data-filter="rafting">
+    <img src="IMG_5345.jpeg" alt="Rafting">
+    <span>Rafting</span>
+  </button>
+
+  <button class="tour-filter" data-filter="waterfall">
+    <img src="IMG_5342.jpeg" alt="Waterfall">
+    <span>Waterfall</span>
+  </button>
+
+  <button class="tour-filter special" data-filter="special">
+    <img src="IMG_5343.jpeg" alt="Special Combo">
+    <span>Special Combo</span>
+  </button>
+
+</div>
+
+    <div class="tour-count">
+        <span id="tourCount">6</span> tours available
+    </div>
+
+</div>
+
+<div class="experience-grid">
+
+    <!-- 1. TREKKING -->
+    <a href="#booking" class="experience-card" data-category="trekking">
+        <img src="IMG_5348.jpeg" alt="Mount Batur Sunrise Trekking">
+
+        <div class="experience-content">
             <h3>Mount Batur Sunrise Trekking</h3>
-            <p>Private sunrise trekking with a local guide and beautiful views from Mount Batur.</p>
-            <a class="tour-link" href="https://wa.me/6285111244457?text=Hello%20Awan%20Trekking%2C%20I%20would%20like%20to%20book%20Mount%20Batur%20Sunrise%20Trekking.">BOOK NOW</a>
-          </div>
-        </article>
 
-        <article class="tour-card">
-          <div class="tour-image">
-            <img src="IMG_0172.jpeg" alt="Mount Batur Jeep sunrise tour"
-                 onerror="this.parentElement.style.background='linear-gradient(135deg,#0f5543,#eaa126)'">
-          </div>
-          <div class="tour-body">
-            <h3>Mount Batur Jeep Sunrise Tour</h3>
-            <p>Enjoy the sunrise adventure by 4x4 Jeep. Jeep reaches the mid-mountain area, not the summit or crater.</p>
-            <a class="tour-link" href="https://wa.me/6285111244457?text=Hello%20Awan%20Trekking%2C%20I%20would%20like%20to%20book%20the%20Mount%20Batur%20Jeep%20Sunrise%20Tour.">BOOK NOW</a>
-          </div>
-        </article>
+            <div class="experience-info">
+                <span>◷ 5–6 Hours</span>
+                <span>⌁ Amazing Views</span>
+            </div>
 
-        <article class="tour-card">
-          <div class="tour-image">
-            <img src="IMG_1470.jpeg" alt="Mount Batur sunset trekking"
-                 onerror="this.parentElement.style.background='linear-gradient(135deg,#0f5543,#eaa126)'">
-          </div>
-          <div class="tour-body">
-            <h3>Mount Batur Sunset Trekking</h3>
-            <p>Explore Mount Batur in the afternoon and enjoy a peaceful mountain sunset experience.</p>
-            <a class="tour-link" href="https://wa.me/6285111244457?text=Hello%20Awan%20Trekking%2C%20I%20would%20like%20to%20book%20Mount%20Batur%20Sunset%20Trekking.">BOOK NOW</a>
-          </div>
-        </article>
-
-        <article class="tour-card">
-          <div class="tour-image">
-            <img src="IMG_2966.jpeg" alt="Bali adventure tour"
-                 onerror="this.parentElement.style.background='linear-gradient(135deg,#0f5543,#eaa126)'">
-          </div>
-          <div class="tour-body">
-            <h3>Private Bali Adventure</h3>
-            <p>Create a private Bali day with local experiences, nature, culture and flexible travel arrangements.</p>
-            <a class="tour-link" href="https://wa.me/6285111244457?text=Hello%20Awan%20Trekking%2C%20I%20would%20like%20to%20ask%20about%20a%20Private%20Bali%20Adventure.">BOOK NOW</a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="gallery" id="gallery">
-    <div class="container">
-      <div class="section-heading">
-        <div class="eyebrow">GALERY AWAN TREKKING</div>
-        <h2>Moments From The Mountain</h2>
-      </div>
-
-      <!-- Satu kotak saja: foto berganti otomatis -->
-      <div class="gallery-box" id="galleryBox">
-        <div class="gallery-slide active">
-          <img src="IMG_0162.jpeg" alt="Mount Batur sunrise">
-          <div class="gallery-caption">Mount Batur Sunrise</div>
+            <span class="book-now">Book Now →</span>
         </div>
-        <div class="gallery-slide">
-          <img src="IMG_0172.jpeg" alt="Mount Batur adventure">
-          <div class="gallery-caption">Mount Batur Adventure</div>
-        </div>
-        <div class="gallery-slide">
-          <img src="IMG_1470.jpeg" alt="Bali mountain experience">
-          <div class="gallery-caption">Bali Mountain Experience</div>
-        </div>
-        <div class="gallery-slide">
-          <img src="IMG_2966.jpeg" alt="Awan Trekking">
-          <div class="gallery-caption">Awan Trekking</div>
-        </div>
-        <div class="gallery-slide">
-          <img src="IMG_3693.jpeg" alt="Kintamani Bali">
-          <div class="gallery-caption">Kintamani, Bali</div>
-        </div>
+    </a>
 
-        <button class="gallery-arrow prev" onclick="changeSlide(-1)" aria-label="Previous photo">‹</button>
-        <button class="gallery-arrow next" onclick="changeSlide(1)" aria-label="Next photo">›</button>
-        <div class="dots" id="dots"></div>
-      </div>
-    </div>
-  </section>
 
-  <section class="cta">
-    <h2>Ready for Your Mount Batur Adventure?</h2>
-    <p>Contact Awan Trekking directly and plan your private experience with a local guide.</p>
-    <a class="cta-btn" href="https://wa.me/6285111244457?text=Hello%20Awan%20Trekking%2C%20I%20would%20like%20to%20make%20a%20booking.">BOOK VIA WHATSAPP</a>
-  </section>
+    <!-- 2. JEEP -->
+    <a href="#booking" class="experience-card" data-category="jeep">
+        <img src="IMG_5346.jpeg" alt="Mount Batur Jeep Tour">
+
+        <div class="experience-content">
+            <h3>Mount Batur Jeep Tour</h3>
+
+            <div class="experience-info">
+                <span>◷ 4–6 Hours</span>
+                <span>⌁ Scenic Adventure</span>
+            </div>
+
+            <span class="book-now">Book Now →</span>
+        </div>
+    </a>
+
+
+    <!-- 3. ATV -->
+    <a href="#booking" class="experience-card" data-category="atv">
+        <img src="IMG_5344.jpeg" alt="Mount Batur ATV Ride">
+
+        <div class="experience-content">
+            <h3>Mount Batur ATV Ride</h3>
+
+            <div class="experience-info">
+                <span>◷ 1.5–2 Hours</span>
+                <span>⌁ Fun & Adventure</span>
+            </div>
+
+            <span class="book-now">Book Now →</span>
+        </div>
+    </a>
+
+
+    <!-- 4. RAFTING -->
+    <a href="#booking" class="experience-card" data-category="rafting">
+        <img src="IMG_5345.jpeg" alt="Bali Rafting Adventure">
+
+        <div class="experience-content">
+            <h3>Bali Rafting Adventure</h3>
+
+            <div class="experience-info">
+                <span>◷ 3–4 Hours</span>
+                <span>⌁ Adventure</span>
+            </div>
+
+            <span class="book-now">Book Now →</span>
+        </div>
+    </a>
+
+
+    <!-- 5. WATERFALL -->
+    <a href="#booking" class="experience-card" data-category="waterfall">
+        <img src="IMG_5342.jpeg" alt="Bali Waterfall Tour">
+
+        <div class="experience-content">
+            <h3>Bali Waterfall Tour</h3>
+
+            <div class="experience-info">
+                <span>◷ 4–8 Hours</span>
+                <span>⌁ Nature & Culture</span>
+            </div>
+
+            <span class="book-now">Book Now →</span>
+        </div>
+    </a>
+
+
+    <!-- 6. SPECIAL COMBO -->
+    <a href="#booking" class="experience-card" data-category="special">
+        <img src="IMG_5343.jpeg" alt="Bali Special Combo">
+
+        <div class="experience-content">
+            <h3>Bali Special Combo</h3>
+
+            <div class="experience-info">
+                <span>◷ Full Day</span>
+                <span>⌁ Complete Adventure</span>
+            </div>
+
+            <span class="book-now">Book Now →</span>
+        </div>
+    </a>
+
+</div>
+</section>
+
+
+
+<div class="tour-grid">
+
+<!-- TOUR 1 -->
+
+<div class="tour-image tour-slider">
+
+  <img
+    src="FOTO-1"
+    alt="Mount Batur Sunrise Trekking"
+    class="slide active">
+
+  <img
+    src="FOTO-2"
+    alt="Mount Batur Sunrise Trekking"
+    class="slide">
+
+  <img
+    src="FOTO-3"
+    alt="Mount Batur Sunrise Trekking"
+    class="slide">
+
+</div>
+<div class="tour-content">
+
+<h3>
+Mount Batur Sunrise Trekking Private Tour
+</h3>
+
+<p>
+Private sunrise trek with a local Mount Batur guide.
+Enjoy the sunrise from the mountain.
+</p>
+
+<div class="info">
+<span>📍 Kintamani, Bali</span>
+<span>👥 Private Tour</span>
+<span>🌅 Sunrise</span>
+</div>
+
+<div class="price">
+Price on request
+</div>
+
+<a href="#contact" class="details">
+View Detail →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- TOUR 2 -->
+
+<article class="tour-card">
+
+<div class="tour-image">
+
+<img
+src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur Day Tour">
+
+</div>
+
+<div class="tour-content">
+
+<h3>
+Mount Batur Day Time
+</h3>
+
+<p>
+Enjoy Mount Batur during daylight with a private local guide.
+</p>
+
+<div class="info">
+<span>📍 Kintamani, Bali</span>
+<span>👥 Private Tour</span>
+<span>☀️ Day Time</span>
+</div>
+
+<div class="price">
+Price on request
+</div>
+
+<a href="#contact" class="details">
+View Detail →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- TOUR 3 -->
+
+<article class="tour-card">
+
+<div class="tour-image">
+
+<img
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur Sunset Trekking">
+
+</div>
+
+<div class="tour-content">
+
+<h3>
+Mount Batur Sunset Trekking
+</h3>
+
+<p>
+Hike to Mount Batur and enjoy changing colors across the Bali landscape.
+</p>
+
+<div class="info">
+<span>📍 Kintamani, Bali</span>
+<span>👥 Private Tour</span>
+<span>🌄 Sunset</span>
+</div>
+
+<div class="price">
+Price on request
+</div>
+
+<a href="#contact" class="details">
+View Detail →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- TOUR 4 -->
+
+<article class="tour-card">
+
+<div class="tour-image">
+
+<img
+src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur Jeep Tour">
+
+</div>
+
+<div class="tour-content">
+
+<h3>
+Mount Batur Jeep Tour
+</h3>
+
+<p>
+Experience Mount Batur sunrise viewpoints by Jeep.
+</p>
+
+<div class="info">
+<span>📍 Kintamani, Bali</span>
+<span>🚙 Jeep</span>
+<span>🌅 Sunrise</span>
+</div>
+
+<div class="price">
+IDR 700K / Jeep
+</div>
+
+<a href="#contact" class="details">
+View Detail →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- TOUR 5 -->
+
+<article class="tour-card">
+
+<div class="tour-image">
+
+<img
+src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur Jeep Day Tour">
+
+</div>
+
+<div class="tour-content">
+
+<h3>
+Mount Batur Jeep Tour Day Time
+</h3>
+
+<p>
+Explore the volcanic landscape of Mount Batur during the day.
+</p>
+
+<div class="info">
+<span>📍 Kintamani, Bali</span>
+<span>🚙 Jeep</span>
+<span>☀️ Day</span>
+</div>
+
+<div class="price">
+Price on request
+</div>
+
+<a href="#contact" class="details">
+View Detail →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- TOUR 6 -->
+
+<article class="tour-card">
+
+<div class="tour-image">
+
+<img
+src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur Jeep Adventure">
+
+</div>
+
+<div class="tour-content">
+
+<h3>
+Mount Batur Jeep Tour – Sunrise & Adventure
+</h3>
+
+<p>
+Discover sunrise viewpoints and the volcanic landscape around Mount Batur.
+</p>
+
+<div class="info">
+<span>📍 Kintamani</span>
+<span>🚙 Jeep</span>
+<span>🌋 Adventure</span>
+</div>
+
+<div class="price">
+Price on request
+</div>
+
+<a href="#contact" class="details">
+View Detail →
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     MORE BALI EXPERIENCES
+========================= -->
+
+<section id="experiences">
+
+<div class="section-title">
+
+<div class="section-label">
+PRIVATE EXPERIENCES
+</div>
+
+<h2>More Bali Experiences</h2>
+
+<p>
+Continue your Bali adventure with other local experiences.
+</p>
+
+</div>
+
+
+<div class="experience-grid">
+
+
+<article class="experience-card">
+
+<img
+src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+alt="Bali Private Tour">
+
+<div class="experience-content">
+
+<h3>Private Bali Tour</h3>
+
+<p>
+Discover beautiful places in Bali with a private driver and local guide.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="experience-card">
+
+<img
+src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=900&q=80"
+alt="ATV Bali Adventure">
+
+<div class="experience-content">
+
+<h3>ATV Quad Adventure</h3>
+
+<p>
+Enjoy an exciting ATV adventure through Bali's natural landscape.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="experience-card">
+
+<img
+src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=900&q=80"
+alt="Bali Waterfall">
+
+<div class="experience-content">
+
+<h3>Waterfall Tour</h3>
+
+<p>
+Explore beautiful waterfalls and hidden natural places around Bali.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="experience-card">
+
+<img
+src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+alt="Bali Swing">
+
+<div class="experience-content">
+
+<h3>Bali Swing Experience</h3>
+
+<p>
+Enjoy spectacular views and memorable moments in Bali.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="experience-card">
+
+<img
+src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?auto=format&fit=crop&w=900&q=80"
+alt="Bali Rafting">
+
+<div class="experience-content">
+
+<h3>Bali Rafting</h3>
+
+<p>
+Experience Bali's rivers and enjoy an exciting outdoor adventure.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="experience-card">
+
+<img
+src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=900&q=80"
+alt="Bali Hot Spring">
+
+<div class="experience-content">
+
+<h3>Hot Spring Experience</h3>
+
+<p>
+Relax in natural hot springs after your Mount Batur adventure.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     MOMENTS
+========================= -->
+
+<section id="gallery">
+
+<div class="section-title">
+
+<div class="section-label">
+MOMENTS FROM THE MOUNTAIN
+</div>
+
+<h2>Moments From The Mountain</h2>
+
+<p>
+A collection of moments from Mount Batur and our adventures in Bali.
+</p>
+
+</div>
+
+
+<div class="gallery">
+
+<div class="gallery-item">
+<img
+src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+alt="Mount Batur">
+</div>
+
+<div class="gallery-item">
+<img
+src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80"
+alt="Bali Mountain">
+</div>
+
+<div class="gallery-item">
+<img
+src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=900&q=80"
+alt="Bali Sunrise">
+</div>
+
+<div class="gallery-item">
+<img
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+alt="Bali Nature">
+</div>
+
+<div class="gallery-item">
+<img
+src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=900&q=80"
+alt="Bali Adventure">
+</div>
+
+<div class="gallery-item">
+<img
+src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=900&q=80"
+alt="Bali Landscape">
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     WHY AWAN TREKKING
+========================= -->
+
+<section id="about" class="why">
+
+<div class="why-inner">
+
+<div class="section-label">
+WHY CHOOSE US
+</div>
+
+<h2>
+Experience Mount Batur With Awan Trekking
+</h2>
+
+<ul class="why-list">
+
+<li>Local guide from Kintamani</li>
+
+<li>Private and flexible experiences</li>
+
+<li>Sunrise, sunset and day trekking</li>
+
+<li>Mount Batur Jeep tours</li>
+
+<li>Friendly local service</li>
+
+<li>Flexible packages and meeting points</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section id="contact" class="cta">
+
+<div class="section-label">
+READY FOR YOUR MOUNT BATUR ADVENTURE?
+</div>
+
+<h2>
+Ready for Your Mount Batur Adventure?
+</h2>
+
+<p>
+Contact Awan Trekking and plan your private Mount Batur experience
+with a local guide.
+</p>
+
+<a
+href="https://wa.me/6281234567890"
+class="btn"
+target="_blank">
+BOOK VIA WHATSAPP
+</a>
+
+</section>
 
 </main>
 
-<footer class="footer" id="contact">
-  <div class="footer-grid">
 
-    <div>
-      <h3>AWAN TREKKING</h3>
-      <p>Adventure • Walking • Nature Trekking</p>
-      <p>Kintamani, Bali, Indonesia</p>
+<!-- =========================
+     FOOTER
+========================= -->
 
-      <div class="socials">
-        <a class="social" href="https://facebook.com/" target="_blank" aria-label="Facebook">f</a>
-        <a class="social" href="https://instagram.com/awantrekking" target="_blank" aria-label="Instagram">◎</a>
-        <a class="social" href="https://tiktok.com/" target="_blank" aria-label="TikTok">♪</a>
-        <a class="social" href="https://wa.me/6285111244457" target="_blank" aria-label="WhatsApp">◉</a>
-      </div>
-    </div>
+<footer>
 
-    <div class="quick-links">
-      <h4>Quick Links</h4>
-      <a href="#home">About Us</a>
-      <a href="#tours">Mount Batur Tours</a>
-      <a href="#gallery">Galery Awan Trekking</a>
-      <a href="#contact">Contact Us</a>
-    </div>
+<div class="footer-grid">
 
-    <div>
-      <h4>Our Location</h4>
+<div>
 
-      <div class="contact-item">
-        <span class="contact-icon">⌖</span>
-        <span>Jl. Pendakian Gn. Batur, Batur Tengah, Kec. Kintamani, Kabupaten Bangli, Bali, Indonesia</span>
-      </div>
+<h3>AWAN TREKKING</h3>
 
-      <div class="contact-item">
-        <span class="contact-icon">✉</span>
-        <span>Contact Awan Trekking via WhatsApp</span>
-      </div>
+<p>
+Adventure • Walking • Nature Trekking
+</p>
 
-      <div class="contact-item">
-        <span class="contact-icon">☎</span>
-        <a href="https://wa.me/6285111244457">+62 851-1124-4457</a>
-      </div>
+<p>
+Local Mount Batur trekking guide and Bali adventure service
+based in Kintamani, Bali.
+</p>
 
-      <div class="contact-item">
-        <span class="contact-icon">◎</span>
-        <a href="https://instagram.com/awantrekking">@awantrekking</a>
-      </div>
-    </div>
+</div>
 
-  </div>
 
-  <div class="footer-bottom">
-    © 2026 AWAN TREKKING • Adventure • Walking • Nature Trekking • Kintamani, Bali
-  </div>
+<div>
+
+<h4>QUICK LINKS</h4>
+
+<p><a href="#tours">Mount Batur Tours</a></p>
+<p><a href="#experiences">Bali Experiences</a></p>
+<p><a href="#gallery">Gallery</a></p>
+<p><a href="#about">About Us</a></p>
+<p><a href="#contact">Contact</a></p>
+
+</div>
+
+
+<div>
+
+<h4>OUR LOCATION</h4>
+
+<p>Kintamani, Bali</p>
+<p>Indonesia</p>
+
+<p>
+WhatsApp: +62 812-3456-7890
+</p>
+
+<p>
+Instagram: @awantrekking
+</p>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 Awan Trekking. All Rights Reserved.
+
+</div>
+
 </footer>
-
-<a class="whatsapp-float" href="https://wa.me/6285111244457" aria-label="WhatsApp">◉</a>
-
 <script>
-function toggleMenu(){
-  document.getElementById('mobileMenu').classList.toggle('open');
-}
-function closeMenu(){
-  document.getElementById('mobileMenu').classList.remove('open');
-}
+document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-/* Gallery slider */
-const slides=[...document.querySelectorAll('.gallery-slide')];
-const dotsBox=document.getElementById('dots');
-let current=0;
-let timer;
+  const slides = document.querySelectorAll(".hero-slide");
 
-slides.forEach((slide,i)=>{
-  slide.querySelector('img').addEventListener('error',()=>{
-    slide.remove();
-    if(slides.length===1) return;
-  });
-  const dot=document.createElement('button');
-  dot.className='dot'+(i===0?' active':'');
-  dot.setAttribute('aria-label','Go to photo '+(i+1));
-  dot.onclick=()=>showSlide(i);
-  dotsBox.appendChild(dot);
+  if (slides.length === 0) return;
+
+  let currentSlide = 0;
+
+  setInterval(function () {
+
+    slides[currentSlide].classList.remove("active");
+
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.add("active");
+
+}, 4000);
+
 });
 
-function showSlide(n){
-  const currentSlides=[...document.querySelectorAll('.gallery-slide')];
-  const dots=[...document.querySelectorAll('.dot')];
-  if(!currentSlides.length)return;
-  current=(n+currentSlides.length)%currentSlides.length;
-  currentSlides.forEach((s,i)=>s.classList.toggle('active',i===current));
-  dots.forEach((d,i)=>d.classList.toggle('active',i===current));
-}
-function changeSlide(step){
-  showSlide(current+step);
-  restartTimer();
-}
-function restartTimer(){
-  clearInterval(timer);
-  timer=setInterval(()=>showSlide(current+1),5000);
-}
-restartTimer();
+document.querySelectorAll(".tour-filter").forEach(button => {
+
+  button.addEventListener("click", function() {
+
+    document.querySelectorAll(".tour-filter").forEach(btn => {
+
+      btn.classList.remove("active");
+
+    });
+
+    this.classList.add("active");
+
+  });
+
+});
+
 </script>
 
 </body>
+
 </html>
